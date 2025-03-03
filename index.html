@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChampionFund - Where Finance Meets Performance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #002D62;  /* Trustworthy navy */
+            --action-orange: #FF4D00;  /* Energetic sports orange */
+            --success-green: #009F4D;  /* Financial growth green */
+            --neutral-white: #F4F4F4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--primary-blue);
+        }
+
+        .header {
+            background: var(--primary-blue);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--neutral-white);
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,45,98,0.9), rgba(0,45,98,0.8)),
+                        url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1950');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+
+        .hero-content h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            background: var(--action-orange);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+            display: inline-block;
+            margin-top: 2rem;
+        }
+
+        .features {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .feature-card img {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .stats-bar {
+            background: var(--success-green);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">ChampionFund</a>
+            <div>
+                <a href="#features" class="cta-button">Features</a>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Maximize Your Financial Fitness</h1>
+            <p>Combine sports-level discipline with smart financial strategy</p>
+            <a href="#contact" class="cta-button">Start Your Journey</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Performance-Driven Solutions</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3" alt="Financial Analytics">
+                <h3>Smart Investment Tracking</h3>
+                <p>Monitor your portfolio with athlete-level precision</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" alt="Sports Analytics">
+                <h3>Goal Achievement System</h3>
+                <p>Set and conquer financial goals like sports milestones</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d" alt="Medal & Coins">
+                <h3>Rewards Program</h3>
+                <p>Earn achievements for financial victories</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <h2>Winning Numbers</h2>
+        <p>500,000+ Goals Achieved | $1B+ Assets Managed | 98% User Satisfaction</p>
+    </section>
+</body>
+</html>
